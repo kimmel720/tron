@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Tron</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+    <title><%"TRON"%></title>
+    <%= stylesheet_link_tag 'application', media: 'all',
+                                           'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+  </head>
+  <body>
+    <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <%= link_to "TRON", root_path, id: "logo" %>
+        <nav>
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "Home",   root_path %></li>
+            <li><%= link_to "Roster",   'roster' %></li>
+            <li><%= link_to "Join us", 'join' %></li>
+            <li><%= link_to "Schedule and Results",   'schedule_and_results' %></li>
+            <li><%= link_to "Videos",   'videos' %></li>
+            <li><%= link_to "Blog", 'blog' %></li>
+            <li><%= link_to "Throwing Log", 'ttitp' %></li>
+            <li><%= link_to "Donate!", '
+            https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=BF7TeXWhvOEVqB2XUdCKz4kHHPPp34clZBwd3C1j5k3EmQyDxv5FDBuYeEm&dispatch=5885d80a13c0db1f8e263663d3faee8dcce3e160f5b9538489e17951d2c62172' %></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
 </html>

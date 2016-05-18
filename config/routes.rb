@@ -1,17 +1,17 @@
 Rails.application.routes.draw do
   root 'pages_controller#home'
 
-  get 'pages_controller/about'
+  get 'roster' => 'pages_controller#about'
 
-  get 'pages_controller/join_us'
+  get 'join' => 'pages_controller#join_us'
 
-  get 'pages_controller/schedule_and_results'
+  get 'schedule_and_results' => 'pages_controller#schedule_and_results'
 
-  get 'pages_controller/videos'
+  get 'videos' => 'pages_controller#videos'
 
-  get 'pages_controller/blog'
+  get 'blog' => 'pages_controller#blog'
 
-  get 'pages_controller/throwing_log'
+  get 'ttitp' => 'pages_controller#throwing_log'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
