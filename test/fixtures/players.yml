@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tron_name: MyString
+  firstname: MyString
+  lastname: MyString
+  minutes: 1
+  team_id: 1
+  year: MyString
+
+two:
+  tron_name: MyString
+  firstname: MyString
+  lastname: MyString
+  minutes: 1
+  team_id: 1
+  year: MyString

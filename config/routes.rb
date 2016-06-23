@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :players
   root 'pages_controller#home'
 
   get 'roster' => 'pages_controller#about'
